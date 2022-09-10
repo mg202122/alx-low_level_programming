@@ -1,25 +1,18 @@
 #include <stdio.h>
+
 /**
- * main - entry point
- *
- * Return: alway returns 0
- *
+ * main - Entry point
+ * void - empty
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	unsigned char a = '0';
-	int i;
+	char c;
 
-	for (i = 0; i < 10; i++)
+	for  (c = 'a'; c <= 'z'; c++)
 	{
-		putchar(a);
-		a++;
-	}
-	a = '1';
-	for (i = 0; i < 6; i++)
-	{
-		putchar('0' + a);
-		a++;
+		putchar(c);
 	}
 	putchar('\n');
 	return (0);
+}
